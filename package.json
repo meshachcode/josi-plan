@@ -1,7 +1,7 @@
 {
   "name": "josi-plan",
   "description": "Need a robot secretary? josi-plan is the manager for all things scheduling, planning, and decision-making.",
-  "version": "0.0.1a",
+  "version": "0.0.2",
   "author": {
     "name": "Jolly Science"
   },
