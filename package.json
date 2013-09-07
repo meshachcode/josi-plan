@@ -1,8 +1,8 @@
 {
   "name": "josi-plan",
   "description": "Need a robot secretary? josi-plan is the manager for all things scheduling, planning, and decision-making.",
-  "version": "1.0.0",
-  "author": "Tom Bell <tomb@tomb.io>",
+  "version": "0.0.1",
+  "author": "Jolly Science",
   "license": "MIT",
   "keywords": [
     "hubot",
