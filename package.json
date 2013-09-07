@@ -1,0 +1,38 @@
+{
+  "name": "josi-plan",
+  "description": "Need a robot secretary? josi-plan is the manager for all things scheduling, planning, and decision-making.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Tom Bell",
+    "email": "tomb@tomb.io"
+  },
+  "license": "MIT",
+  "keywords": [
+    "hubot",
+    "hubot-scripts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jollyscience/josi-plan.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jollyscience/josi-plan/issues"
+  },
+  "dependencies": {
+    "coffee-script": "~1.6"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*",
+    "sinon-chai": "*",
+    "sinon": "*"
+  },
+  "main": "index.coffee",
+  "scripts": {
+    "test": "script/test"
+  },
+  "readme": "### josi-plan\n\n[coming soon]\n\n\tnpm install josi-plan\n\nNeed a robot secretary? josi-plan is the manager for all things scheduling, planning, and decision-making.\n\n\t- josi-plan/\n\t\t- scripts/\n\t\t\t- workingon.coffee\t",
+  "readmeFilename": "README.md",
+  "_id": "josi-plan@1.0.0",
+  "_from": "josi-plan@*"
+}
