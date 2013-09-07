@@ -16,6 +16,7 @@
 
 module.exports = (robot) ->
 
+<<<<<<< HEAD
   robot.respond /what is @?([\w .\-]+) working on(\?)?$/i, (msg) ->
     name = msg.match[1].trim()
 
@@ -47,6 +48,27 @@ module.exports = (robot) ->
       else
         msg.send "#{name}? Who's that?"
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 620edbb10ffd7a49b44830729b99f2e1a80a3c6a
+  robot.respond /(what\'s|what is) (everyone|everybody) working on(\?)?/i, (msg) ->
+    messageText = '';
+    users = robot.brain.users()
+    for k, u of users
+        if u.workingon
+            messageText += "#{u.name} is working on #{u.workingon}\n"
+        else
+            messageText += ""
+    if messageText.trim() is "" then messageText = "Nobody told me a thing."
+    msg.send messageText
+
+<<<<<<< HEAD
+=======
+
+>>>>>>> 620edbb10ffd7a49b44830729b99f2e1a80a3c6a
+>>>>>>> ad25a9c8c6523b7a4f97f95720fccaebe7ebcbd8
   robot.respond /(i\'m|i am|im) working on (.*)/i, (msg) ->
     name = msg.message.user.name
     user = robot.brain.userForName name
@@ -58,4 +80,13 @@ module.exports = (robot) ->
       msg.send "I found #{user.length} people named #{name}"
     else
       msg.send "I have never met #{name}"
+<<<<<<< HEAD
 
+=======
+      
+<<<<<<< HEAD
+  robot.topic (msg) ->
+    msg.send "#{msg.message.text} is the new topic!"
+=======
+>>>>>>> 620edbb10ffd7a49b44830729b99f2e1a80a3c6a
+>>>>>>> ad25a9c8c6523b7a4f97f95720fccaebe7ebcbd8
