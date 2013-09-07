@@ -16,6 +16,10 @@
 
 module.exports = (robot) ->
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 620edbb10ffd7a49b44830729b99f2e1a80a3c6a
   robot.respond /(what\'s|what is) (everyone|everybody) working on(\?)?/i, (msg) ->
     messageText = '';
     users = robot.brain.users()
@@ -27,6 +31,10 @@ module.exports = (robot) ->
     if messageText.trim() is "" then messageText = "Nobody told me a thing."
     msg.send messageText
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 620edbb10ffd7a49b44830729b99f2e1a80a3c6a
   robot.respond /(i\'m|i am|im) working on (.*)/i, (msg) ->
     name = msg.message.user.name
     user = robot.brain.userForName name
@@ -39,5 +47,8 @@ module.exports = (robot) ->
     else
       msg.send "I have never met #{name}"
       
+<<<<<<< HEAD
   robot.topic (msg) ->
     msg.send "#{msg.message.text} is the new topic!"
+=======
+>>>>>>> 620edbb10ffd7a49b44830729b99f2e1a80a3c6a
